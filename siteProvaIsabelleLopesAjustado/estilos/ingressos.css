@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family:'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+}
+/*Cabeçalho*/
+h1{
+    text-align: left;
+    margin-left: 30px;
+    padding-top: 30px;
+    font-family: "Patua One", serif;
+    color: white;
+} 
+header{
+    background-color: #772277;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+header section{
+    height: 50px;
+
+}
+.redes{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.redes ul{
+    text-align: right;
+    list-style: none;
+}
+.redes ul a{
+    display: inline;
+    padding: 0px;
+}
+/*Fim cabeçalho*/
+/*Menu*/
+nav{
+    background-color: #333;
+    text-align: center;
+    font-size: 30px;
+}
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    font-family: "Patua One", serif;
+}
+nav li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-family: "Patua One", serif;
+}
+nav li a:hover{
+    background-color: #772277;
+}
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none;
+}
+.dropdown-menu a{
+    display: block;
+    color: black;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+/*Fim menu*/
+/*Principal, laterais e rodapé*/
+fieldset{
+    margin: 20px;
+    margin-top: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+h3{
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+main{
+    height: 1000px;
+    width: 70%;
+    float: left;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.direita{
+    height: 900px;
+    width: 15%;
+    background-color: #772277;
+    float: left;
+}
+aside{
+    background-color: #772277;
+    float: right;
+    height: 900px;
+    width: 15%;
+}
+footer{
+    width: 100%;
+    background-color: #333;
+    margin-top: 20px;
+    height: 100%;
+    color: white;
+}
+address{
+    margin-left: 5px;
+}
+/*Fim principal, laterais e rodapé*/
+/*Formulário*/
+fieldset{
+    margin: 200px;
+    margin-top: 100px;
+    background-color: #333;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+h3{
+    margin-top: 50px;
+    font-size: 30px;
+}
+main{
+    height: 880px;
+    width: 70%;
+    float: left;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+}
+input{
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(80, 80, 80);
+    padding: 7px;
+    width: 250px;
+    margin: 10px;
+    border: none;
+}
+::placeholder{
+    color: white;
+}
+#ingresso{
+    margin-top: 10px;
+}
+#comprar{
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    background-color: #772277;
+    border: none;
+    margin-bottom: 50px;
+}
+
+/*Fim Formulário*/

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/fogueira.png">
+    <link rel="stylesheet" type="text/CSS" href="../estilos/correioElegante.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua One">
+    <script src="../scripts/comprar.js"></script>
+    <title>Correio Elegante</title>
+</head>
+<body>
+
+    <header>
+        <h1>FESTA JUNINA</h1>
+        <section class="redes">
+            <figure>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">
+                        <img src="../imagens/facebook.png" alt="facebook" height="20px" width="20px"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com" target="_blank">
+                        <img src="../imagens/instagram.jpg" alt="instagram"height="20px" width="20px"></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank">
+                        <img src="../imagens/tiktok.png" alt="tiktok"height="20px" width="20px"></a></li>
+                </ul>
+            </figure>
+        </section>
+        <img src="../imagens/transparente.png" height="70px" width="50px">
+        <img src="../imagens/bandeiras.png" style="left: 0px; top: 0px; position: absolute"  height="299px" width="598px" >
+        <nav>
+            <ul>
+                <li><a href="../index.html">Página Inicial</a></li>
+                <li><a href="../paginas/atracoes.html">Atrações</a></li>
+                <li><a href="../paginas/ingressos.html">Ingressos</a></li>
+                <li>Fotos</li>
+                <li class="dropdown">
+                    <a>Correio Elegante</a>
+                    <div class="dropdown-menu">
+                        <a href="../paginas/correioElegante.html">Envie uma mensagem</a>
+                        <a href="">Mensagens Recebidas</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="direita"><p></p></div>
+    <main>
+        <form action="#" method="post" id="formCorreio">
+            <fieldset>
+                <h3>ENVIE A SUA MENSAGEM!</h3>
+                <input id="nomeCad1" type="text" required="required" placeholder="Seu Nome Completo">
+                <br>
+                <input id="celCad" type="text" required="required" placeholder="Seu Celular">
+                <br>
+                <input id="nomeCad2" type="text" required="required" placeholder="Nome Completo do Destinatário">
+                <br>
+                <label for="genero">Seu Gênero:</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" required />
+                    <span>Masculino</span>
+                <input type="radio" id="feminino" name="genero" required />
+                    <span>Feminino</span>
+                <input type="radio" id="outro" name="genero" required />
+                    <span>Outro</span>
+                    <br>
+                    <label for="estadoCad">Seu Estado:</label>
+                    <br>
+                <select name="estadoCad" id="estadoCad">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="DF">Distrito Federal</option>
+                </select>
+                <br>
+                <input type="text" id="mensagemCad" required="required" placeholder="Escreva a sua mensagem!">
+                <br>
+                <button type="button" id="enviar" onclick="comprar()">Enviar</button>
+                <button type="reset" id="limpar" onclick="limpar()">Limpar</button>
+                <br>
+                <h3>CONFIRMAR DADOS</h3>
+                <label class="dados">
+                    Seu Nome Completo:<label id="nome_Cad1"></label>
+                    <br>
+                    Seu Celular:<label id="cel_Cad"></label>
+                    <br>
+                    Nome Completo do Destinatário:<label id="nome_Cad2"></label>
+                    <br>
+                    Seu Gênero:<label id="gen_Cad"></label>
+                    <br>
+                    Seu Estado:<label id="seuEstado_Cad"></label>
+                    <br>
+                    Sua Mensagem:<label id="mensagem_Cad"></label>
+                </label>
+            </fieldset>
+        </form>
+    </main>
+    <aside>
+    </aside>
+
+    <footer>
+        <address>
+        Contato:<br>
+        isa@gmail.com<br>
+        Lá em casa, 134340<br>
+        Sorocaba, SP
+        </address>
+        <p>&copy; Todos os direitos reservados, Isabelle Lopes.</p>
+    </footer>
+</body>
+</html>

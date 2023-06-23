@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family:'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+}
+/*Cabeçalho*/
+h1{
+    text-align: left;
+    margin-left: 30px;
+    padding-top: 30px;
+    font-family: "Patua One", serif;
+    color: white;
+} 
+header{
+    background-color: #772277;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+header section{
+    height: 50px;
+
+}
+.redes{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.redes ul{
+    text-align: right;
+    list-style: none;
+}
+.redes ul a{
+    display: inline;
+    padding: 0px;
+}
+/*Fim cabeçalho*/
+/*Menu*/
+nav{
+    background-color: #333;
+    text-align: center;
+    font-size: 30px;
+}
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    font-family: "Patua One", serif;
+}
+nav li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-family: "Patua One", serif;
+}
+nav li a:hover{
+    background-color: #772277;
+}
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none;
+}
+.dropdown-menu a{
+    display: block;
+    color: black;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+/*Fim menu*/
+/*Principal, laterais e rodapé*/
+fieldset{
+    margin: 20px;
+    margin-top: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+.espaco{
+    padding: 100px;
+    margin-top: 250px;
+}
+h3{
+    padding: 10px;
+}
+main{
+    height: 1050px;
+    width: 70%;
+    float: left;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+}
+main p{
+    text-align: left;
+    padding: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.direita{
+    height: 1050px;
+    width: 15%;
+    background-color: #772277;
+    float: left;
+}
+aside{
+    background-color: #772277;
+    float: right;
+    height: 1050px;
+    width: 15%;
+}
+footer{
+    width: 100%;
+    background-color: #333;
+    margin-top: 20px;
+    height: 100%;
+    color: white;
+}
+address{
+    margin-left: 5px;
+}
+/*Fim principal, laterais e rodapé*/
+/*slide*/
+.responsive { /*imagens*/
+    display: inline-block;
+    margin-left: 9em;
+    margin-right: auto;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+.content{
+    height: 350px;
+    width: 650px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 460px;
+}
+.bar{
+    width: 30px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.bar:hover{
+    background-color: #772277;
+}
+.identify{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 650px;
+    height:350px;
+}
+.slide {
+    width: 650px;
+
+}
+.slide img{
+    width: 650px;
+    height: 350px;
+}
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+#slide2:checked ~ .s1 {
+    margin-left: -100%;
+}
+#slide3:checked ~ .s1 {
+    margin-left: -200%;
+}
+#slide4:checked ~ .s1 {
+    margin-left: -300%;
+}
+/*fim*/

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/fogueira.png">
+    <link rel="stylesheet" type="text/CSS" href="../siteProvaIsabelleLopesAjustado/estilos/layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua One">
+    <title>Festa Junina</title>
+</head>
+<body>
+
+    <header>
+        <h1>FESTA JUNINA</h1>
+        <section class="redes">
+            <figure>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">
+                        <img src="../siteProvaIsabelleLopesAjustado/imagens/facebook.png" alt="facebook" height="20px" width="20px"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com" target="_blank">
+                        <img src="../siteProvaIsabelleLopesAjustado/imagens/instagram.jpg" alt="instagram" height="20px" width="20px"></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank">
+                        <img src="../siteProvaIsabelleLopesAjustado/imagens/tiktok.png" alt="tiktok" height="20px" width="20px"></a></li>
+                </ul>
+            </figure>
+        </section>
+        <img src="../siteProvaIsabelleLopesAjustado/imagens/transparente.png" height="70px" width="50px">
+        <img src="../siteProvaIsabelleLopesAjustado/imagens/bandeiras.png" style="left: 0px; top: 0px; position: absolute" height="299px" width="598px" >
+        <nav>
+            <ul>
+                <li><a href="../siteProvaIsabelleLopesAjustado/index.html">Página Inicial</a></li>
+                <li><a href="../siteProvaIsabelleLopesAjustado/paginas/atracoes.html">Atrações</a></li>
+                <li><a href="../siteProvaIsabelleLopesAjustado/paginas/ingressos.html">Ingressos</a></li>
+                <li>Fotos</li>
+                <li class="dropdown">
+                    <a>Correio Elegante</a>
+                    <div class="dropdown-menu">
+                        <a href="../siteProvaIsabelleLopesAjustado/paginas/correioElegante.html">Envie uma mensagem</a>
+                        <a>Mensagens recebidas</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="direita"><p></p></div>
+    <main>
+        <fieldset>
+            <article>
+                <h3>CONHEÇA MAIS DA NOSSA FESTANÇA!</h3>
+                <section class="content">
+                    <section class="slides">
+                        <!--Radio buttons-->
+                        <input type="radio" name="radio-btn" class="identify" id="slide1" checked>
+                        <input type="radio" name="radio-btn" class="identify" id="slide2">
+                        <input type="radio" name="radio-btn" class="identify" id="slide3">
+                        <input type="radio" name="radio-btn" class="identify" id="slide4">
+                        <!--Fim radio buttons-->
+                        <!--Imagens do slide-->
+                        <section class="slide s1">
+                            <img src="../siteProvaIsabelleLopesAjustado/imagens/brinquedo.jpg" alt="roda gigante">
+                        </section>
+                        <section class="slide">
+                            <img src="../siteProvaIsabelleLopesAjustado/imagens/parquegeral.jpg" alt="imagem geral parque">
+                        </section>
+        
+                        <section class="slide">
+                            <img src="../siteProvaIsabelleLopesAjustado/imagens/comidas.webp" alt="comidas">
+                        </section>
+        
+                        <section class="slide">
+                            <img src="../siteProvaIsabelleLopesAjustado/imagens/dança.jpg" alt="dança">
+                        </section>
+                        <script >
+                            let count = 1;
+                            var contagem = document.getElementById("slide1").checked = true;
+
+                            setInterval( function(){
+                                nextImage();
+                            }, 5000)
+
+                            function nextImage(){
+                                count++;
+                                if(count>4){
+                                    count = 1;
+                                }
+
+                            document.getElementById("slide"+count).checked = true;
+                        }
+                         </script>
+                        <!--Fim imagens do slide-->
+                        <!--Checkbox das imagens-->
+                        <section class="navigation">
+                            <label for="slide1" class="bar"></label>
+                            <label for="slide2" class="bar"></label>
+                            <label for="slide3" class="bar"></label>
+                            <label for="slide4" class="bar"></label>
+                        </section>
+                        <!--Fim do checkbox-->
+                    </section>
+                </section>
+                <!--Fim do slide-->
+                <br>
+                <audio autoplay="autoplay" controls="controls">
+                    <source src="../siteProvaIsabelleLopesAjustado/Quadrilha Junina Clássica.mp3" type="audio/mp3" />
+                </audio>
+                <p>Nossa tradicional festa junina, considerada a maior do estado, que ocorre todos os anos, trazendo muito lazer e alegria para famílias com uma programação diversificada de shows com grandes nomes do cenário nacional e internacional! Venha participar dessa comemoração você também!<strong> Basta trazer 1kg de alimento não perecível e não se esquecer do ingresso.</strong></p>
+                <br>
+                <section class="espaco"></section>
+                <figcaption>Foto aérea do evento no ano anterior (2022).</figcaption>
+                <h3>INFORMAÇÕES </h3>
+                <p><strong>Local:</strong>Praça de Eventos</p>
+                <p><strong>Horário:</strong> Aberto todos os dias. De Segunda-feira a Quinta das 14h às 20h e de Sexta-feira ao Domingo das 12h às 00h</p>
+                <p>Para a entrada nos shows, é necessário que crianças até <strong>16 anos estejam acompanhadas</strong> por responsável.</p>
+                <p>Caso tenha um ingresso para o show do dia, não é necessário comprar ingresso para entrada no parque.</p>
+                <p>Entrada no evento com ingresso <strong>meia-entrada</strong>, é necessária a aprensentação da <strong>Carteirinha estudantil.</strong></p>
+                <p>Para utilização de brinquedos e barracas de comida é cobrado um valor de acordo com o próprio estabelecimento.</p>
+                <br>
+                <p><strong>NÃO NOS RESPONSABILIZAMOS PELA PERDA DE PERTENCES PESSOAIS NO EVENTO</strong></p>        
+            </article>
+        </fieldset>
+    </main>
+    <aside>
+        <p></p>
+    </aside>
+
+    <footer>
+        <address>
+        Contato:<br>
+        isa@gmail.com<br>
+        Lá em casa, 134340<br>
+        Sorocaba, SP
+        </address>
+        <p>&copy; Todos os direitos reservados, Isabelle Lopes.</p>
+    </footer>
+</body>
+</html>

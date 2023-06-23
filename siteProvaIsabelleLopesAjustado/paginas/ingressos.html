@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/fogueira.png">
+    <link rel="stylesheet" type="text/CSS" href="../estilos/ingressos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua One">
+    <script src="../scripts/confirmado.js"></script>
+    <title>Ingressos</title>
+</head>
+<body>
+
+    <header>
+        <h1>FESTA JUNINA</h1>
+        <section class="redes">
+            <figure>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">
+                        <img src="../imagens/facebook.png" alt="facebook" height="20px" width="20px"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com" target="_blank">
+                        <img src="../imagens/instagram.jpg" alt="instagram" height="20px" width="20px"></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank">
+                        <img src="../imagens/tiktok.png" alt="tiktok" height="20px" width="20px"></a></li>
+                </ul>
+        </figure>
+        </section>
+        <img src="../imagens/transparente.png" height="70px" width="50px">
+        <img src="../imagens/bandeiras.png" style="left: 0px; top: 0px; position: absolute"  height="299px" width="598px" >
+        <nav>
+            <ul>
+                <li><a href="../index.html">Página Inicial</a></li>
+                <li><a href="../paginas/atracoes.html">Atrações</a></li>
+                <li><a href="../paginas/ingressos.html">Ingressos</a></li>
+                <li>Fotos</li>
+                <li class="dropdown">
+                    <a>Correio Elegante</a>
+                    <div class="dropdown-menu">
+                        <a href="../paginas/correioElegante.html">Envie uma mensagem</a>
+                        <a>Mensagens recebidas</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="direita"><p></p></div>
+    <main>
+        <fieldset>
+            <h3>GARANTA O SEU INGRESSO!</h3>
+            <input id="nomeCad1" type="text" required="required" placeholder="Seu Nome Completo">
+            <br>
+            <input type="text" id="emailCad1" required="required" placeholder="Seu E-Mail">
+            <br>
+                <label for="atracaoCad">Ingresso para qual atração?</label>
+                <br>
+            <select name="atracaoCad" id="atracaoCad">
+                <option value="LUDMILLA">27/05 (SÁBADO) - LUDMILLA</option>
+                <option value="TETO">28/05 (DOMINGO) - TETO + WIUs</option>
+                <option value="ZE">02/06 (SEXTA-FEIRA) - ZÉ NETO E CRISTIANO</option>
+                <option value="LUAN">03/06 (SÁBADO) - LUAN SANTANA</option>
+                <option value="MATUE">04/06 (DOMINGO)- MATUÊ</option>
+                <option value="MAIARA">07/06 (QUARTA-FEIRA) - MAIARA E MARAISA</option>
+                <option value="ALOK">10/06 (SÁBADO) - ALOK</option>
+                <option value="MENOS">11/06 (DOMINGO) - MENOS É MAIS</option>
+                <option value="JORGE">16/06 (SEXTA-FEIRA) - JORGE E MATHEUS</option>
+                <option value="ANA">17/06 (SÁBADO) - ANA CASTELA</option>
+            </select>
+            <br>
+            <label id="ingresso">Quantidade de ingressos:</label>
+            <br>
+            <input id="ingresso" type="number" required="required" min="1" max="5">
+            <br>
+            <button type="button" id="comprar" onclick="confirmado()">COMPRAR</button>  
+        </fieldset>
+    </main>
+    <aside>
+        <p></p>
+    </aside>
+
+    <footer>
+        <address>
+        .<br>
+        Contato:<br>
+        isa@gmail.com<br>
+        Lá em casa, 134340<br>
+        Sorocaba, SP
+        </address>
+        <p>&copy; Todos os direitos reservados, Isabelle Lopes.</p>
+    </footer>
+</body>
+</html>
